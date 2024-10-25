@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="actions">
+                <button class="action1">Action 1</button>
+                <button class="action2">Action 2</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Medium length hero headline goes here</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+        <div class="hero-buttons">
+            <button class="main-action">Main action</button>
+            <button class="secondary-action">Secondary action</button>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="image">
+            <img src="image1.jpg" alt="Books stack">
+        </div>
+        <div class="image">
+            <img src="image2.jpg" alt="Person writing on notebook">
+        </div>
+        <div class="image">
+            <img src="image3.jpg" alt="Sticky notes on the wall">
+        </div>
+        <div class="image">
+            <img src="image4.jpg" alt="Person typing on laptop">
+        </div>
+    </section>
+    <section class="pricing-section">
+      <div class="toggle-buttons">
+          <button class="toggle active">Monthly</button>
+          <button class="toggle">Yearly</button>
+      </div>
+      
+      <div class="pricing-card basic">
+          <h2>Basic plan</h2>
+          <h3>$29.99/month</h3>
+          <p>or $200 yearly</p>
+          <ul>
+              <li>Access to basic farming tools</li>
+              <li>Weekly farming tips newsletter</li>
+              <li>Feature text goes here</li>
+          </ul>
+          <button class="sign-up">Sign up now</button>
+      </div>
+
+      <div class="pricing-card business">
+          <h2>Business plan</h2>
+          <h3>$49.99/month</h3>
+          <p>or $299 yearly</p>
+          <ul>
+              <li>Access to advanced farming tools</li>
+              <li>Monthly personalized consultation</li>
+              <li>Feature text goes here</li>
+              <li>Feature text goes here</li>
+          </ul>
+          <button class="sign-up">Sign up now</button>
+      </div>
+
+      <div class="pricing-card enterprise">
+          <h2>Enterprise plan</h2>
+          <h3>$79.99/month</h3>
+          <p>or $499 yearly</p>
+          <ul>
+              <li>Access to premium farming tools</li>
+              <li>Monthly personalized consultation</li>
+              <li>Feature text goes here</li>
+              <li>Feature text goes here</li>
+          </ul>
+          <button class="sign-up">Sign up now</button>
+      </div>
+
+ <!---
+ -->
+ <div class="container">
+    <div class="hero-content fade-in">
+        <h1 class="hero-title">Discover the Power of Our Products</h1>
+        <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <a href="#" class="main-action">Main action</a>
+    </div>
+
+    <div class="steps-container">
+        <div class="step-card">
+            <span class="step-number">01</span>
+            <h2 class="step-title">Plan Your Farming Strategy</h2>
+            <p class="step-description">Define your goals, choose the crops or livestock you want to focus on, and create a detailed plan for your farming operation.</p>
+        </div>
+
+        <div class="step-card">
+            <span class="step-number">02</span>
+            <h2 class="step-title">Prepare Your Land</h2>
+            <p class="step-description">Clear the land, test the soil, and make any necessary improvements to ensure that your farm is ready for planting or raising animals.</p>
+        </div>
+
+        <div class="step-card">
+            <span class="step-number">03</span>
+            <h2 class="step-title">Plant or Raise Your Crops/Livestock</h2>
+            <p class="step-description">Follow your plan and start planting your crops or raising your livestock. Make sure to monitor their growth and health regularly.</p>
+        </div>
+
+        <div class="step-card">
+            <span class="step-number">04</span>
+            <h2 class="step-title">Harvest and Maintain</h2>
+            <p class="step-description">When your crops are ready for harvest or your livestock are mature, gather the produce and continue to maintain your farm for future seasons.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Animate elements when they come into view
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    // Create the intersection observer
+    const observer = new IntersectionObserver(handleIntersection, {
+        threshold: 0.1
+    });
+
+    // Observe all step cards
+    document.querySelectorAll('.step-card').forEach(card => {
+        observer.observe(card);
+    });
+
+    // Add hover effect to step cards
+    document.querySelectorAll('.step-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateX(10px)';
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateX(0)';
+        });
+    });
+
+    // Animate main action button on hover
+    const mainAction = document.querySelector('.main-action');
+    mainAction.addEventListener('mouseenter', () => {
+        mainAction.style.transform = 'translateY(-2px)';
+    });
+
+    mainAction.addEventListener('mouseleave', () => {
+        mainAction.style.transform = 'translateY(0)';
+    });
+</script>
+ <!---
+ -->
+  </section>
+  <footer class="footer">
+    <div class="container">
+        <!-- Testimonials -->
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"></path>
+                            <path d="M12 16v-4"></path>
+                            <path d="M12 8h.01"></path>
+                        </svg>
+                    </div>
+                    <h3>Organic Farmer</h3>
+                </div>
+                <p>This platform has helped me transition to organic farming smoothly. The tips and guides are practical and effective.</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"></path>
+                            <path d="M12 16v-4"></path>
+                            <path d="M12 8h.01"></path>
+                        </svg>
+                    </div>
+                    <h3>Livestock Farmer</h3>
+                </div>
+                <p>I love the livestock management tools on this website. It has made managing my farm animals much easier.</p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Our team is ready to assist you with any questions you may have.</p>
+            <p>We would love to hear from you. Reach out to us for any inquiries or feedback.</p>
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Feel free to drop by our farm or contact us via email or phone.</p>
+                    <p>info@farmingsite.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>Follow us on social media for updates and news about our farm.</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Office</h3>
+                    <p>We look forward to connecting with you!</p>
+                    <p>123 Farm Way, Farmington, USA</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <h3>Subscribe to our newsletter</h3>
+            <p>Stay up to date with our latest news and promotions by subscribing to our newsletter.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email" id="newsletter-email">
+                <button onclick="subscribeNewsletter()">Subscribe to our newsletter</button>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-links">
+            <div>
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Connect with us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>© 2023 Your Farming Website. All Rights Reserved.</p>
+            <div class="copyright-links">
+                <a href="/privacy-policy">/privacy-policy</a>
+                <a href="/terms-of-service">/terms-of-service</a>
+                <a href="/cookie-policy">/cookie-policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function subscribeNewsletter() {
+        const email = document.getElementById('newsletter-email').value;
+        if (validateEmail(email)) {
+            alert('Thank you for subscribing!');
+            document.getElementById('newsletter-email').value = '';
+        } else {
+            alert('Please enter a valid email address.');
+        }
+    }
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+</script>
+</body>
+</html>
+

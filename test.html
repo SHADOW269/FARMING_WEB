@@ -1,0 +1,396 @@
+I'll convert the React component into plain HTML, CSS, and JavaScript.
+
+
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farming Website Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .footer {
+            background-color: #1B4332;
+            color: white;
+            padding: 4rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (min-width: 768px) {
+            .testimonials {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .testimonial-card {
+            background-color: #2D6A4F;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .avatar {
+            width: 48px;
+            height: 48px;
+            background-color: #40916C;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .contact-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-icon {
+            width: 64px;
+            height: 64px;
+            background-color: #2D6A4F;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            margin-bottom: 4rem;
+        }
+
+        .newsletter input {
+            width: 100%;
+            max-width: 400px;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            background-color: #2D6A4F;
+            border: 1px solid #40916C;
+            border-radius: 0.25rem;
+            color: white;
+        }
+
+        .newsletter input::placeholder {
+            color: #B7B7B7;
+        }
+
+        .newsletter button {
+            width: 100%;
+            max-width: 400px;
+            padding: 0.75rem;
+            background-color: #40916C;
+            border: none;
+            border-radius: 0.25rem;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .newsletter button:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Footer Links */
+        .footer-links {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-links {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .footer-links h4 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #B7B7B7;
+        }
+
+        /* Copyright */
+        .copyright {
+            padding-top: 2rem;
+            border-top: 1px solid #2D6A4F;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .copyright {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .copyright-links {
+            margin-top: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .copyright-links {
+                margin-top: 0;
+            }
+        }
+
+        .copyright-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .copyright-links a:hover {
+            color: #B7B7B7;
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="container">
+            <!-- Testimonials -->
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"></path>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                        </div>
+                        <h3>Organic Farmer</h3>
+                    </div>
+                    <p>This platform has helped me transition to organic farming smoothly. The tips and guides are practical and effective.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"></path>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                        </div>
+                        <h3>Livestock Farmer</h3>
+                    </div>
+                    <p>I love the livestock management tools on this website. It has made managing my farm animals much easier.</p>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h2>Contact Us</h2>
+                <p>Our team is ready to assist you with any questions you may have.</p>
+                <p>We would love to hear from you. Reach out to us for any inquiries or feedback.</p>
+
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p>Feel free to drop by our farm or contact us via email or phone.</p>
+                        <p>info@farmingsite.com</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>Follow us on social media for updates and news about our farm.</p>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>Office</h3>
+                        <p>We look forward to connecting with you!</p>
+                        <p>123 Farm Way, Farmington, USA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <h3>Subscribe to our newsletter</h3>
+                <p>Stay up to date with our latest news and promotions by subscribing to our newsletter.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" id="newsletter-email">
+                    <button onclick="subscribeNewsletter()">Subscribe to our newsletter</button>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div>
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Connect with us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>© 2023 Your Farming Website. All Rights Reserved.</p>
+                <div class="copyright-links">
+                    <a href="/privacy-policy">/privacy-policy</a>
+                    <a href="/terms-of-service">/terms-of-service</a>
+                    <a href="/cookie-policy">/cookie-policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function subscribeNewsletter() {
+            const email = document.getElementById('newsletter-email').value;
+            if (validateEmail(email)) {
+                alert('Thank you for subscribing!');
+                document.getElementById('newsletter-email').value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        }
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    </script>
+</body>
+</html>
+
+```
+
+I've created a complete HTML file that includes:
+
+1. Responsive layout using CSS Grid and Flexbox
+2. Mobile-first design with media queries
+3. Modern styling with hover effects and transitions
+4. SVG icons for the contact section
+5. Simple newsletter subscription form with validation
+6. All the sections from the original design:
+   - Testimonials
+   - Contact information
+   - Newsletter signup
+   - Footer links
+   - Copyright section
+
+To use this code:
+1. Save it as an HTML file
+2. Open it in a web browser
+3. All styles and scripts are included in the file, so no external dependencies are needed
+
+The JavaScript includes basic email validation for the newsletter form. Would you like me to add any additional features or modify any part of the design?
